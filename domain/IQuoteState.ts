@@ -1,0 +1,53 @@
+import { BOPPFabric } from './BOPPFabric';
+import { ContainerLength } from './ContainerLength';
+import { StickerOrHotMelt } from './StickerOrHotMelt';
+import { YesOrNo } from './YesOrNo';
+
+// Quote states stores data in the store with serialized dates
+export interface IQuoteState {
+  quoteName: string;
+  customerName: string;
+  contactName: string;
+  orderDescription: string;
+  orderDate: string;
+  desiredDeliveryDate: string;
+  bagStyle: string;
+  openEnd: string;
+  estimatedOrderQty: number;
+  closedEnd: string;
+  annualUsage: number;
+  bagName: any;
+  width: any;
+  gusset: any;
+  sleeveLength: any;
+  gluePlateDepth: any;
+  finishedLength: any;
+  fabricGSM: number;
+  extrudateGSM: number;
+  fabricColor: string;
+  fabricSupplier: string;
+  specialLamination: YesOrNo;
+  outerLayerType: string;
+  gsm: number;
+  layerMaterial: BOPPFabric;
+  matteUpcharge: string;
+  uvTreatment: YesOrNo;
+  stickerOrHotMelt: StickerOrHotMelt;
+  handle?: YesOrNo;
+  highCOF: YesOrNo;
+  numberOfColors: string;
+  ezOpenTape: string;
+  threadColor?: string;
+  ezOpenColor?: string;
+  tapeColor?: string;
+  specialInstructions: string;
+  finalDestination: string;
+  containerLength: ContainerLength;
+  moqKg: number;
+  adLamCharge: number;
+  tapeMtsKg: number;
+  ezOpenTapeMtsKg: number;
+  commissionPercentage: number;
+  AMSAPxToAPOrCaMexCostPercentage: number;
+  APPriceToCustomerPercentage: number;
+}
